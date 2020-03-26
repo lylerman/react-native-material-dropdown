@@ -188,7 +188,7 @@ export default class Dropdown extends PureComponent {
     };
   }
 
-  getDerivedStateFromProps(props, state) {
+  static getDerivedStateFromProps(props, state) {
     if (props.value !== state.value) {
       return {
         ...state,
